@@ -6,7 +6,7 @@ import { useDebounce } from 'react-use';
 import { getTrendingMovies, updateSearchCount } from './appwrite';
 
 
-const MOVIE_API_BASE_URL = 'https://api.themoviedb.org/3';   // https://developer.themoviedb.org/reference/discover-movie
+const MOVIE_API_BASE_URL = 'https://api.themoviedb.org/3';   
 
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY
 
@@ -43,8 +43,8 @@ function App() {
 
     try {
       const endpoint = query
-        ? `${MOVIE_API_BASE_URL}/search/movie?query=${encodeURIComponent(query)}` // website: https://developer.themoviedb.org/reference/search-movie
-        : `${MOVIE_API_BASE_URL}/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc`; // website: https://developer.themoviedb.org/reference/movie-popular-list
+        ? `${MOVIE_API_BASE_URL}/search/movie?query=${encodeURIComponent(query)}` 
+        : `${MOVIE_API_BASE_URL}/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc`; 
 
       const response = await fetch(endpoint, GET_API_OPTIONS);
 
