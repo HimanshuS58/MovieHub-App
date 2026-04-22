@@ -1,3 +1,7 @@
+# URL
+https://moviehub-app-nony.onrender.com
+
+
 # MovieHub-App
 This project is a full-stack movie web application built using React 19, Tailwind CSS, and Appwrite, allowing users to explore popular movies, search dynamically, and view trending titles based on real user activity. The app integrates with the TMDB API to fetch movie data and uses Appwrite as a backend service to store and track search counts, enabling a Netflix-like trending movies feature. The frontend leverages React hooks, reusable components, debounced search for performance optimization, and responsive UI design for a smooth user experience.
 
